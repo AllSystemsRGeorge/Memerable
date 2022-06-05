@@ -43,3 +43,29 @@ $(document).ready(function () {
 
 });
 
+
+//Alejandra header code begins here (page1)//
+var liEl=document.querySelectorAll("li")
+var i=0
+setInterval(() => {
+	// 0/9  =0
+	//1/9=1
+     //2/9=2
+
+var remainOf= i++ % liEl.length
+	//  9/9=0
+
+liEl[remainOf].style.color="greenYellow"
+console.log(remainOf,i)
+if(remainOf===0 && i==10){
+	for (let index = 0; index < liEl.length; index++) {
+	    liEl[index].style.color= "rgb(33, 34, 31)";
+		
+	}
+	i=0
+}
+
+
+}, 1000);
+
+//Alejandra header code ends here (page1)//
