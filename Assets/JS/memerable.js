@@ -32,6 +32,30 @@ $(document).ready(function () {
 		}
 	};
 
+	// Here is the Meme pic API
+	const memePics = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://ronreiter-meme-generator.p.rapidapi.com/images",
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Host": "ronreiter-meme-generator.p.rapidapi.com",
+			"X-RapidAPI-Key": "1afe68a172msh8503debc549170fp101692jsnf4985a19d633"
+		}
+	// Winning: [6, 603], [6, 648], [3, 390], [8, 820], [9, 912], [9, 929], [9, 985], [0, 57], [1, 176], [9, 963]
+
+	// Rage Quit: [0,1], [0, 32], [0, 36], [0, 33], [1, 296], [1, 243], [6, 692], [9, 946], [0, 54], [1, 174]
+
+	// Arrow: [6, 631], [3, 300], [3, 375], [7, 776], [7, 784], [7, 788], [8, 808], [8, 877], [9, 910], [1, 149]
+
+	// Cake: is Lie [6, 655], [7, 707], [7, 792], [8, 835], [0, 65], [7, 704], [7, 710], [7,727], [7, 736], [1, 199]
+	};
+
+	
+	$.ajax(settings).done(function (response) {
+		console.log(response);
+	});
+
 
 
 	genBtn.click(function () {
