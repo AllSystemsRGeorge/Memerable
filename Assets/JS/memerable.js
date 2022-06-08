@@ -128,3 +128,16 @@ if(remainOf===0 && i==10){
 }, 1000);
 
 //Alejandra header code ends here (page1)//
+
+/*let btnBegin=document.; getElementbyId('')
+
+btnBegin.addEventListener('click', () =>{
+	window.history.back();
+})*/
+
+/*const aplication = document.querySelector(".container")
+
+const url = 'url'
+
+fetch(url)
+.then(res => ) console.log(res)*/

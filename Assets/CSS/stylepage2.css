@@ -1,7 +1,7 @@
 .button-rounded-hover {
     border: 0;
-    border-radius: 5000px;
-    padding: 1rem 2rem;
+    border-radius: 12px;
+    padding: 2rem 3rem;
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
@@ -10,23 +10,28 @@
     transition: all 0.35s ease;
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
+
+    
+            
   }
   
   .button-rounded-hover:before {
-    opacity: 0;
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    border-radius: inherit;
-    background-color: #fefefe;
-    transition: all 0.3s;
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    border: 1px solid #838087;
+    background-color:wheat;
+    color: pink;
+    font-family: Nanum Gothic Coding;
+    font-weight: bolder;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    margin-right: 15px;
+    border-radius:  10px;
+    align-items: center;
+    justify-content: center;
   }
+           
+  
   
   .button-rounded-hover:after {
     position: absolute;
@@ -34,18 +39,33 @@
     bottom: 0px;
     left: 0px;
     right: 0px;
-    border: 5px solid #115b8d;
+    border: 10px floralwhite;
     content: '';
-    border-radius: inherit;
+    border-radius: 10px;
+    
   }
+
+  .button-rounded-hover:hover:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(215, 205, 212);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+  } /*Alejandra*/
+
+  
   
   .button-rounded-hover:hover,
   .button-rounded-hover:focus {
-    background-color: #115b8d;
+    background-color: rgb(18, 16, 16);
   }
   
-  .button-rounded-hover:hover:before,
-  .button-rounded-hover:focus:before {
+  .button-rounded-hover:hover::before,
+  .button-rounded-hover:focus::before {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
             transform: translateX(0%);
@@ -54,8 +74,8 @@
   
   
 .product-feature-section {
-    background: #e6e6e6;
-    padding: 1rem;
+    padding: 5rem;
+    
   }
   
   .product-feature-section-outer {
@@ -73,14 +93,31 @@
     .product-feature-section-outer {
       max-width: 75%;
     }
-  }
   
+ }
   .product-feature-section-headline {
+    font-family: orbitron;
+    font-size: xx-large;
     margin-bottom: 2rem;
+    text-align: left;
+    align-items:left;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+  
+    font-weight: bolder;
     text-align: center;
+    display: flex;
+    margin-right: 40px;
+    border-radius:  40px;
+    border: 0.5px solid black;
+    padding: 10px;
+   
+    
   }
   
-  .product-feature-section-inner {
+  /*.product-feature-section-inner {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -90,7 +127,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
+  }*/ /*Alejandra*/
   
   .product-feature-section-feature {
     display: -webkit-flex;
@@ -111,23 +148,23 @@
             flex-direction: column;
   }
   
-  .product-feature-section-feature.top-left {
-    border-right: 1px solid #cacaca;
-    border-bottom: 1px solid #cacaca;
+  /*.product-feature-section-feature.top-left {
+    border-right: 1px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
   }
   
   .product-feature-section-feature.top-right {
-    border-bottom: 1px solid #cacaca;
+    border-bottom: 1px solid goldenrod;
   }
   
   .product-feature-section-feature.bottom-left {
-    border-right: 1px solid #cacaca;
-  }
+    border-right: 1px solid goldenrod;
+  }*/ /*Alejandra*/
   
   .product-feature-section-feature .feature-title {
     margin-bottom: 0;
     line-height: 16px;
-    font-size: 0.875rem;
+    font-size: 20rem;
   }
   
   .product-feature-section-feature .feature-desc {
@@ -154,5 +191,28 @@
     }
   }
   
+  body{
   
+    background:  rgb(86, 30, 86);
+    
+  }
+  
+  .text-button{
+    font-family: Nanum Gothic Coding;
+    font-size: 30px;
+    text-align: center;
+    margin: 4px 10px;
+    
+  }
+/*
+ #cat-img{
+   
+   border-radius: 50%;
+   height: 130px;
+   margin: -66px 0 22px 0;
+   vertical-align: top;
+   padding: 10px;
+   
+ }*/
+ 
   

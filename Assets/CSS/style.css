@@ -6,17 +6,31 @@
     box-sizing: border-box;
 
 }
+/*
+img{
+    border-radius: 50%;
+    height: 130px;
+    margin: -66px 0 22px 0;
+    vertical-align: top;
+    padding: 10px;
+    
+}*/
+
 
 body{
   background-color: rgb(86, 30, 86);
   
+  
+  /*background-image: url(3506328.jpg);
+  background-repeat: no-repeat;*/
 }
 
 header{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color:grey ;
+    background-color:grey;
+    border: black solid;
     
 }
 
@@ -26,7 +40,7 @@ header{
     display: flex;
     height: 60%;
     width: 1000px;
-    border-style: dashed;
+    border: rgb(17, 16, 16) solid;
 }
 #header-text{
     color: aliceblue;
@@ -47,15 +61,15 @@ header{
 }
 
     li{
-    color: rgb(33, 34, 31);
+    color: rgb(26, 25, 25);
     font-family: orbitron;
     display: flex;
     align-items:center;
     justify-content: center;
     font-size: 50px;
     text-align: center;
-    border: 1px solid black;
-    ;
+    border: 1px solid black ;
+    
 }
 
 li:hover{
@@ -103,4 +117,436 @@ body {
 
 
   }
+ /*Alejandra*/
+
  
+    
+ 
+
+ .btn-begin-text{
+     font-family: Nanum Gothic Coding;
+     font-size: 30px;
+     text-decoration: none;
+     height: 20vh;
+     width: 20%;
+     height: 60%;
+     background: none;
+     display: flex;
+     justify-content: center;
+     
+     margin: auto;
+    height: none;
+     border: 1px solid rgb(15, 14, 14);
+     border-radius: 30px;
+     padding: 10px;
+     position: bottom;
+    
+
+ }
+
+ #btn-begin {
+    font-family: orbitron;
+    font-size: x-large;
+    margin-bottom: 2rem;
+    text-align: left;
+    align-items:left;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+  
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    margin-right: 40px;
+    border-radius:  40px;
+    border: 1px  black;
+  
+    position: inherit;
+   
+   
+ }
+ 
+a{
+    color: rgb(20, 18, 18);
+}
+/*Alejandra*/
+
+.product-feature-section-headline1 {
+    font-family: orbitron;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    text-align: left;
+    align-items:left;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+  
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    margin-right: 40px;
+    border-radius:  40px;
+    border: 0.5px solid black;
+    padding: 10px;
+   
+    
+  }
+
+  .button-rounded-hover {
+    border: 0;
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: all 0.35s ease;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+
+  .button-rounded-hover:before {
+    border: 1px solid #838087;
+    background-color:wheat;
+    color: pink;
+    font-family: Nanum Gothic Coding;
+    font-weight: bolder;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    margin-right: 15px;
+    border-radius:  10px;
+    align-items: center;
+    justify-content: center;
+  }
+           
+  
+  .button-rounded-hover:after {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 10px floralwhite;
+    content: '';
+    border-radius: 10px;
+    
+  }
+
+  .button-rounded-hover:hover:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(215, 205, 212);
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+  } /*Alejandra*/
+
+  
+  
+  .button-rounded-hover:hover,
+  .button-rounded-hover:focus {
+    background-color: rgb(18, 16, 16);
+  }
+  
+  .button-rounded-hover:hover::before,
+  .button-rounded-hover:focus::before {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 0.25;
+  }
+  
+  
+.product-feature-section {
+    padding: 5rem;
+    
+  }
+  
+  .product-feature-section-outer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  @media print, screen and (min-width: 40em) {
+    .product-feature-section-outer {
+      max-width: 75%;
+    }
+  
+ }
+  .product-feature-section-headline {
+    font-family: orbitron;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+    text-align: left;
+    align-items:left;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+  
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    margin-right: 40px;
+    border-radius:  40px;
+    border: 0.5px solid black;
+    padding: 10px;
+   
+    
+  }
+
+  .product-feature-section-feature {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 1rem;
+    -webkit-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        
+        
+        
+        
+        }
+
+
+        .button-rounded-hover {
+            border: 0;
+            border-radius: 12px;
+            padding: 2rem 3rem;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            transition: all 0.35s ease;
+            -webkit-transform: translateZ(0);
+                    transform: translateZ(0);
+          }
+          
+          .button-rounded-hover:before {
+            border: 1px solid #838087;
+            background-color:wheat;
+            color: pink;
+            font-family: Nanum Gothic Coding;
+            font-weight: bolder;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            display: flex;
+            margin-right: 15px;
+            border-radius:  10px;
+            align-items: center;
+            justify-content: center;
+          }
+                   
+          
+          
+          .button-rounded-hover:after {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            border: 10px floralwhite;
+            content: '';
+            border-radius: 10px;
+            
+          }
+        
+          .button-rounded-hover:hover:after{
+            content: "";
+            position: absolute;
+            background-color: rgb(215, 205, 212);
+            height: 3px;
+            width: 100%;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        
+          } /*Alejandra*/
+        
+          
+          
+          .button-rounded-hover:hover,
+          .button-rounded-hover:focus {
+            background-color: rgb(18, 16, 16);
+          }
+          
+          .button-rounded-hover:hover::before,
+          .button-rounded-hover:focus::before {
+            -webkit-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                    transform: translateX(0%);
+            opacity: 0.25;
+          }
+          
+          
+        .product-feature-section {
+            padding: 5rem;
+            
+          }
+          
+          .product-feature-section-outer {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 100%;
+            margin: 0 auto;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          }
+          
+          @media print, screen and (min-width: 40em) {
+            .product-feature-section-outer {
+              max-width: 75%;
+            }
+          
+         }
+          .product-feature-section-headline {
+            font-family: orbitron;
+            font-size: xx-large;
+            margin-bottom: 2rem;
+            text-align: left;
+            align-items:left;
+            margin: auto;
+            height: 15vh;
+            display: flex;
+            align-items: center;
+          
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            margin-right: 40px;
+            border-radius:  40px;
+            border: 0.5px solid black;
+            padding: 10px;
+           
+            
+          }
+          
+          /*.product-feature-section-inner {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+          }*/ /*Alejandra*/
+          
+          .product-feature-section-feature {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: flex-start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            padding: 1rem;
+            -webkit-flex: 1 0 50%;
+                -ms-flex: 1 0 50%;
+                    flex: 1 0 50%;
+            -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          }
+          
+          /*.product-feature-section-feature.top-left {
+            border-right: 1px solid goldenrod;
+            border-bottom: 1px solid goldenrod;
+          }
+          
+          .product-feature-section-feature.top-right {
+            border-bottom: 1px solid goldenrod;
+          }
+          
+          .product-feature-section-feature.bottom-left {
+            border-right: 1px solid goldenrod;
+          }*/ /*Alejandra*/
+          
+          .product-feature-section-feature .feature-title {
+            margin-bottom: 0;
+            line-height: 16px;
+            font-size: 20rem;
+          }
+          
+          .product-feature-section-feature .feature-desc {
+            margin-bottom: 0;
+          }
+          
+          .product-feature-section-feature .fa {
+            margin-right: 1.25rem;
+            font-size: 2rem;
+          }
+          
+          @media print, screen and (min-width: 40em) {
+            .product-feature-section-feature {
+              padding: 2rem;
+              -webkit-flex: 1 0 50%;
+                  -ms-flex: 1 0 50%;
+                      flex: 1 0 50%;
+              -webkit-justify-content: flex-start;
+                  -ms-flex-pack: start;
+                      justify-content: flex-start;
+              -webkit-flex-direction: row;
+                  -ms-flex-direction: row;
+                      flex-direction: row;
+            }
+          }
+          
+          body{
+          
+            background:  rgb(86, 30, 86);
+            
+          }
+          
+          .text-button{
+            font-family: Nanum Gothic Coding;
+            font-size: 30px;
+            text-align: center;
+            margin: 4px 10px;
+            
+          }
+        /*
+         #cat-img{
+           
+           border-radius: 50%;
+           height: 130px;
+           margin: -66px 0 22px 0;
+           vertical-align: top;
+           padding: 10px;
+           
+         }*/
+         
+          
+
+  
