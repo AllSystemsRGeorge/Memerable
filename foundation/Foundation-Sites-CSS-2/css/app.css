@@ -1,0 +1,171 @@
+/* like botton */
+
+.button-like {
+    border: 2px solid #8a8a8a;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3rem;
+    color: #8a8a8a;
+    transition: all ease 0.4s;
+  }
+  
+  .button-like span {
+    margin-left: 0.5rem;
+  }
+  
+  .button-like .fa,
+  .button-like span {
+    transition: all ease 0.4s;
+  }
+  
+  .button-like:focus {
+    background-color: transparent;
+  }
+  
+  .button-like:focus .fa,
+  .button-like:focus span {
+    color: #8a8a8a;
+  }
+  
+  .button-like:hover {
+    border-color: #cc4b37;
+    background-color: transparent;
+  }
+  
+  .button-like:hover .fa,
+  .button-like:hover span {
+    color: #cc4b37;
+  }
+  
+  .liked {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+  }
+  
+  .liked .fa,
+  .liked span {
+    color: #fefefe;
+  }
+  
+  .liked:focus {
+    background-color: #cc4b37;
+  }
+  
+  .liked:focus .fa,
+  .liked:focus span {
+    color: #fefefe;
+  }
+  
+  .liked:hover {
+    background-color: #cc4b37;
+    border-color: #cc4b37;
+  }
+  
+  .liked:hover .fa,
+  .liked:hover span {
+    color: #fefefe;
+  }
+  
+  
+
+/* expanding hover colums */
+
+
+.expand-column-wrapper {
+    height: 100vh;
+    max-wdtih: 75rem;
+  }
+  
+  .expand-column-wrapper .column {
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .expand-column-wrapper .column:hover {
+    -webkit-flex-basis: 40%;
+        -ms-flex-preferred-size: 40%;
+            flex-basis: 40%;
+  }
+  
+  .expand-column-wrapper .column:hover .expand-column-content {
+    opacity: 1;
+  }
+  
+  .expand-column-wrapper .expand-column-content {
+    color: #fefefe;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .expand-column-wrapper {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(1) {
+    background: url("https://images.pexels.com/photos/2154/sky-lights-space-dark.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(2) {
+    background: url("https://images.pexels.com/photos/113744/helix-nebula-ngc-7293-planetary-fog-constellation-aquarius-113744.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(3) {
+    background: url("https://images.pexels.com/photos/2162/sky-space-dark-galaxy.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(4) {
+    background: url("https://images.pexels.com/photos/24248/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(5) {
+    background: url("https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  .expand-column-wrapper .column:nth-of-type(6) {
+    background: url("https://images.pexels.com/photos/2156/sky-earth-space-working.jpg") center center no-repeat;
+    height: 50vh;
+    background-size: cover;
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+.red {
+    background-color: yellow;
+}
