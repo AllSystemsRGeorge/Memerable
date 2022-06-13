@@ -16,13 +16,16 @@ img{
     
 }*/
 
+@font-face {
+  font-family: myfont;
+  src: url(../Fonts/PublicPixel-0W5Kv.ttf);
 
+}
 body{
-  background-color: rgb(86, 30, 86);
+  background-color: rgb(31, 28, 29);
+  background-repeat: repeat;
+  margin: 0;
   
-  
-  /*background-image: url(3506328.jpg);
-  background-repeat: no-repeat;*/
 }
 
 header{
@@ -76,10 +79,7 @@ li:hover{
     color: greenyellow;
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
-  }
+
   
   .background {
     width: 100vw;
@@ -523,11 +523,7 @@ a{
             }
           }
           
-          body{
-          
-            background:  rgb(86, 30, 86);
-            
-          }
+         
           
           .text-button{
             font-family: Nanum Gothic Coding;
@@ -596,33 +592,121 @@ a{
   }
 }
 
+.grid-x {
+ 
+  size: 10px;
+  background-image: url(../Images/3506328.jpg);
+  justify-content:space-around;
+}
+
 .expand-column-wrapper .column:nth-of-type(1) {
-  background: url("https://images.pexels.com/photos/2154/sky-lights-space-dark.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://media4.giphy.com/media/kC5QpJdTycS0pLOTVN/giphy.gif?cid=ecf05e47rfqb63o8kizlgjhi0l0vjt71y5bh1sydjo5qasuw&rid=giphy.gif&ct=s") center center no-repeat;
   height: 50vh;
   background-size: cover;
+  padding: 5%;
+  
+  
 }
 
 .expand-column-wrapper .column:nth-of-type(2) {
-  background: url("https://images.pexels.com/photos/113744/helix-nebula-ngc-7293-planetary-fog-constellation-aquarius-113744.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://media4.giphy.com/media/0iTtULi8IsCctlQVrp/giphy.gif?cid=ecf05e474dae6j1s20wbo76upnhwe6itq8eoi2b65uzki6i9&rid=giphy.gif&ct=") center center no-repeat;
   height: 50vh;
   background-size: cover;
+  padding: 5%;
+  
 }
 
 .expand-column-wrapper .column:nth-of-type(3) {
-  background: url("https://images.pexels.com/photos/2162/sky-space-dark-galaxy.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://media4.giphy.com/media/kC5QpJdTycS0pLOTVN/giphy.gif?cid=ecf05e47rfqb63o8kizlgjhi0l0vjt71y5bh1sydjo5qasuw&rid=giphy.gif&ct=s") center center no-repeat;
   height: 50vh;
   background-size: cover;
+  padding: 5%;
 }
 
 .expand-column-wrapper .column:nth-of-type(4) {
-  background: url("https://images.pexels.com/photos/24248/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://media4.giphy.com/media/0iTtULi8IsCctlQVrp/giphy.gif?cid=ecf05e474dae6j1s20wbo76upnhwe6itq8eoi2b65uzki6i9&rid=giphy.gif&ct=s") center center no-repeat;
   height: 50vh;
   background-size: cover;
+  padding: 5%;
 }
 
 .expand-column-wrapper .column:nth-of-type(5) {
-  background: url("https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") center center no-repeat;
+  background: url("https://media4.giphy.com/media/kC5QpJdTycS0pLOTVN/giphy.gif?cid=ecf05e47rfqb63o8kizlgjhi0l0vjt71y5bh1sydjo5qasuw&rid=giphy.gif&ct=s") center center no-repeat;
   height: 50vh;
   background-size: cover;
+  
+  padding: 5%;
+  
 }
 
+
+.introduction-container{
+  font-family: myfont;
+  color: #ddcdcd;
+  background-color: #1f1c22;
+  justify-content: center;
+  font-size: x-large;
+
+}
+
+
+
+
+/* CSS "SELECT A GAME" btn*/
+.hollow {
+  font-family: myfont;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hollow:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .hollow  {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.button-small-expanded {
+  font-family: myfont;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.hollow:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .hollow  {
+    padding: 0.25em 0.75em;
+  }
+}

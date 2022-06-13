@@ -1,4 +1,27 @@
 
+//Alejandra//
+var btn1= document.querySelector('#Btn1')
+var btn2= document.querySelector('#Btn2')
+var btn3= document.querySelector('#Btn3')
+var btn4= document.querySelector('#Btn4')
+var loading= document.querySelector('#loading')
+
+function startButton(){
+	loading.classList.remove('hide')
+
+	setTimeout(function(){
+		loading.classList.add('hide')
+
+	}, 3000)
+}
+
+btn1.addEventListener('click', startButton) 
+btn2.addEventListener('click', startButton )
+btn3.addEventListener('click', startButton)
+btn4.addEventListener('click', startButton)
+//alejandra spinner//
+
+
 // Here is the video game API
 /*const videoGames = {
 	"async": true,
@@ -141,3 +164,4 @@ const url = 'url'
 
 fetch(url)
 .then(res => ) console.log(res)*/
+
