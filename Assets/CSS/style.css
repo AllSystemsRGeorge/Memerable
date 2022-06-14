@@ -1,4 +1,5 @@
-*,
+
+*, 
 *:before,
 *:after{
     padding: 0;
@@ -6,15 +7,6 @@
     box-sizing: border-box;
 
 }
-/*
-img{
-    border-radius: 50%;
-    height: 130px;
-    margin: -66px 0 22px 0;
-    vertical-align: top;
-    padding: 10px;
-    
-}*/
 
 @font-face {
   font-family: myfont;
@@ -69,7 +61,7 @@ header{
     display: flex;
     align-items:center;
     justify-content: center;
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
     border: 1px solid black ;
     
@@ -118,10 +110,6 @@ li:hover{
 
   }
  /*Alejandra*/
-
- 
-    
- 
 
  .btn-begin-text{
      font-family: Nanum Gothic Coding;
@@ -249,8 +237,6 @@ a{
 
   } /*Alejandra*/
 
-  
-  
   .button-rounded-hover:hover,
   .button-rounded-hover:focus {
     background-color: rgb(18, 16, 16);
@@ -449,17 +435,7 @@ a{
             
           }
           
-          /*.product-feature-section-inner {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-            -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-          }*/ /*Alejandra*/
+    
           
           .product-feature-section-feature {
             display: -webkit-flex;
@@ -480,18 +456,6 @@ a{
                     flex-direction: column;
           }
           
-          /*.product-feature-section-feature.top-left {
-            border-right: 1px solid goldenrod;
-            border-bottom: 1px solid goldenrod;
-          }
-          
-          .product-feature-section-feature.top-right {
-            border-bottom: 1px solid goldenrod;
-          }
-          
-          .product-feature-section-feature.bottom-left {
-            border-right: 1px solid goldenrod;
-          }*/ /*Alejandra*/
           
           .product-feature-section-feature .feature-title {
             margin-bottom: 0;
@@ -532,21 +496,10 @@ a{
             margin: 4px 10px;
             
           }
-        /*
-         #cat-img{
-           
-           border-radius: 50%;
-           height: 130px;
-           margin: -66px 0 22px 0;
-           vertical-align: top;
-           padding: 10px;
-           
-         }*/
-         
-          
+      
 
   
-/* expanding hover colums */
+/* expanding hover colums */ 
 
 .expand-column-wrapper {
   height: 50vh;
@@ -652,8 +605,8 @@ a{
 
 
 
-/* CSS "SELECT A GAME" btn*/
-.hollow {
+/* CSS "SELECT A GAME" btn*/ 
+.styleBotton {
   font-family: myfont;
   font-size: 50px;
   letter-spacing: 2px;
@@ -670,19 +623,19 @@ a{
   touch-action: manipulation;
 }
 
-.hollow:active {
+.styleBotton:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
 }
 
 @media (min-width: 768px) {
-  .hollow  {
+  .styleBotton  {
     padding: 0.25em 0.75em;
   }
 }
 
-.button-small-expanded {
+.toPageTwoBotton {
   font-family: myfont;
   font-size: 16px;
   letter-spacing: 2px;
@@ -699,14 +652,18 @@ a{
   touch-action: manipulation;
 }
 
-.hollow:active {
+.styleBotton:active {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
 }
 
 @media (min-width: 768px) {
-  .hollow  {
+  .styleBotton  {
     padding: 0.25em 0.75em;
   }
+}
+
+.styleFamily {
+  font-family: myfont;
 }
