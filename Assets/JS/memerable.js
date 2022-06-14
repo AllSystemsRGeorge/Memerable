@@ -109,7 +109,7 @@ $(document).ready(function () {
 	};
 
 	
-	$.ajax(settings).done(function (response) {
+	$.ajax(memePics).done(function (response) {
 		console.log(response);
 	});
 
