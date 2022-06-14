@@ -6,15 +6,6 @@
     box-sizing: border-box;
 
 }
-/*
-img{
-    border-radius: 50%;
-    height: 130px;
-    margin: -66px 0 22px 0;
-    vertical-align: top;
-    padding: 10px;
-    
-}*/
 
 @font-face {
   font-family: myfont;
@@ -118,10 +109,6 @@ li:hover{
 
   }
  /*Alejandra*/
-
- 
-    
- 
 
  .btn-begin-text{
      font-family: Nanum Gothic Coding;
@@ -249,8 +236,6 @@ a{
 
   } /*Alejandra*/
 
-  
-  
   .button-rounded-hover:hover,
   .button-rounded-hover:focus {
     background-color: rgb(18, 16, 16);
@@ -449,17 +434,7 @@ a{
             
           }
           
-          /*.product-feature-section-inner {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-            -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-          }*/ /*Alejandra*/
+    
           
           .product-feature-section-feature {
             display: -webkit-flex;
@@ -480,18 +455,6 @@ a{
                     flex-direction: column;
           }
           
-          /*.product-feature-section-feature.top-left {
-            border-right: 1px solid goldenrod;
-            border-bottom: 1px solid goldenrod;
-          }
-          
-          .product-feature-section-feature.top-right {
-            border-bottom: 1px solid goldenrod;
-          }
-          
-          .product-feature-section-feature.bottom-left {
-            border-right: 1px solid goldenrod;
-          }*/ /*Alejandra*/
           
           .product-feature-section-feature .feature-title {
             margin-bottom: 0;
@@ -532,18 +495,7 @@ a{
             margin: 4px 10px;
             
           }
-        /*
-         #cat-img{
-           
-           border-radius: 50%;
-           height: 130px;
-           margin: -66px 0 22px 0;
-           vertical-align: top;
-           padding: 10px;
-           
-         }*/
-         
-          
+      
 
   
 /* expanding hover colums */
