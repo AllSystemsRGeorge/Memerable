@@ -1,4 +1,3 @@
-
 //Alejandra//
 /*var btn1= document.querySelector('#Btn1')
 var btn2= document.querySelector('#Btn2')
@@ -44,11 +43,40 @@ const generateMemes = {
 	}
 };
 
-$.ajax(generateMemes).done(function (response) {
-	console.log("memeResponse",response);
-	$("#Rage-quit").attr("src", response);
+async function setImage() {
+  var response = await fetch(`https://ronreiter-meme-generator.p.rapidapi.com/meme?top=${selectedGameName}&bottom=Bottom%20Text&meme=Condescending-Wonka&font_size=50&font=Impact`,{
+    headers: {
+  			"X-RapidAPI-Host": "ronreiter-meme-generator.p.rapidapi.com",
+  			"X-RapidAPI-Key": "1afe68a172msh8503debc549170fp101692jsnf4985a19d633"
+  		}
+  })
+  const reader = response.body.getReader();
+  var stream = await new ReadableStream({
+      start(controller) {
+        return pump();
+        function pump() {
+          return reader.read().then(({ done, value }) => {
+            // When no more data needs to be consumed, close the stream
+            if (done) {
+              controller.close();
+              return;
+            }
+            // Enqueue the next data chunk into our target stream
+            controller.enqueue(value);
+            return pump();
+          });
+        }
+      }
+    })
+
 	
-});
+
+  var res = new Response(stream)
+  var blob = await res.blob()
+  $("#Rage-quit").attr("src", URL.createObjectURL(blob));
+}
+
+setImage();
 
 
 // Here is the video game API
@@ -157,7 +185,7 @@ $(document).ready(function () {
 
 //Alejandra header code begins here (page1)//
 
-var liEl=document.querySelectorAll("li")
+/*var liEl=document.querySelectorAll("li")
 var i=0
 setInterval(() => {
 	// 0/9  =0
@@ -180,7 +208,7 @@ if(remainOf===0 && i==10){
 
 }, 1000);
 
-//Alejandra header code ends here (page1)//
+//Alejandra header code ends here (page1)//*/
 
 /*let btnBegin=document.; getElementbyId('')
 
