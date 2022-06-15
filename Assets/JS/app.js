@@ -35,7 +35,12 @@ let showGameImg = (boxArtUrl) => {
 //on click function that will display the game img when click on a specific name of the game 
 $("#game-list li").on("click", function(){
   let gameId = $(this).attr("game-id");
+  
+  
+
   let myGameSelected = gameList.find(x => x.game_id == gameId );
+
+  localStorage.setItem("selectedGameName", myGameSelected.game_name)
   showGameImg(myGameSelected.box_art);
 })
 

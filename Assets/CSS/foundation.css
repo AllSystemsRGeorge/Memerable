@@ -17,7 +17,9 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0; 
+  font-family: myfont;
+}
 
 h1 {
   font-size: 2em;
@@ -297,7 +299,11 @@ textarea {
           flex: 0 0 auto;
   min-height: 0;
   min-width: 0;
-  width: 100%; }
+  width: 100%; 
+  font-family: myfont;
+
+
+}
   .cell.auto {
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 0;
@@ -2500,7 +2506,9 @@ code, .code-inline {
   -webkit-appearance: none;
   line-height: 1;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer; 
+  font-family: myfont;
+}
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button.tiny {
@@ -6454,3 +6462,7 @@ a.thumbnail {
 .long-delay {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
+
+.main-div{
+  background-size: 200%;
+}
