@@ -26,6 +26,7 @@ header{
     height: 100%;
     background-color:grey;
     border: black solid;
+    font-family: myfont;
     
 }
 
@@ -36,10 +37,11 @@ header{
     height: 60%;
     width: 1000px;
     border: rgb(17, 16, 16) solid;
+    font-family: myfont;
 }
 #header-text{
     color: aliceblue;
-    font-family: orbitron;
+    font-family: myfont;
     font-size: xx-large;
     flex-wrap: nowrap;
     display: flex;
@@ -57,7 +59,7 @@ header{
 
     li{
     color: rgb(26, 25, 25);
-    font-family: orbitron;
+    font-family: myfont;
     display: flex;
     align-items:center;
     justify-content: center;
